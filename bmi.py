@@ -8,11 +8,11 @@ def calculate_bmi(height, weight):
 def check_weight_class(bmi):
     print("checking BMI's weight class : " + str(bmi))
     if bmi < 18.5:
-        weight_class = "Under Weight"
+        weight_class = -1
     elif bmi > 25.0:
-        weight_class = "Over Weight"
+        weight_class = 1
     else:
-        weight_class = "Normal Weight"
+        weight_class = 0
     print("Weight Class is : " + weight_class)
     return weight_class
 
