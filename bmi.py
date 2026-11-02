@@ -13,8 +13,7 @@ def check_weight_class(bmi):
         weight_class = 1
     else:
         weight_class = 0
-    print("Weight Class is : " + weight_class)
-    return weight_class
+    return int(weight_class)
 
 bmi = calculate_bmi(weight=57, height=1.73)
 weight_class = check_weight_class(bmi)
